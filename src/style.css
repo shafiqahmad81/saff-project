@@ -18,6 +18,10 @@
 
 }
 
+body{
+    @apply text-base font-titillium text-body 
+}
+
 @layer base{
     h1, h2, h3, h4, h5, h6, button, span, input, select, a, label, textarea, tr, td{
         @apply font-titillium
@@ -33,6 +37,15 @@
         @apply text-base sm:text-lg
     }
     
+}
+
+.datepicker::-webkit-calendar-picker-indicator {
+    background-image: url(./assets/icon/calendar.png);
+    background-size: 24px;
+    background-position: right center;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
 }
 
 
