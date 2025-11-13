@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+
+    /* ========== fonts ========== */
+    --font-titillium: "Titillium Web", sans-serif;
+
+      /* ============= brakpoint =============== */
+    --breakpoint-1xl: 80rem;  /* 1280px */
+
+    /* =============== color =============== */
+    --color-body: #172144;
+    --color-blue: #263772;
+
+    /* ============== shadow =============== */
+
+}
+
+@layer base{
+    h1, h2, h3, h4, h5, h6, button, span, input, select, a, label, textarea, tr, td{
+        @apply font-titillium
+    }
+    
+    h3{
+        @apply text-xl md:text-2xl lg:text-3xl lg:leading-10 font-semibold text-body
+    }
+    h4{
+        @apply text-lg md:text-xl lg:text-2xl text-body
+    }
+    h5{
+        @apply text-base sm:text-lg
+    }
+    
+}
+
+
+
+@utility container {
+    @apply mx-auto px-4;
+    @media (width >=80rem   /* 1280px */
+    ) {
+        max-width: var(--breakpoint-1xl);  /* 1280px */
+    }
+}
