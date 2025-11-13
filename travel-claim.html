@@ -107,14 +107,20 @@
                 <div class="w-1/4 border-r px-4 py-2">
                   <h5 class="font-bold">Duration of the Trip</h5>
                 </div>
-                <div class="w-[75%] px-4 py-2 flex gap-2.5">
-                  <div class="w-1/2 flex items-center gap-2">
+                <div class="w-[75%] px-4 py-2 flex gap-5 flex-col lg:flex-row">
+                  <div class="w-full lg:w-1/2 flex items-center gap-2">
                     <label for="" class="w-full max-w-fit font-bold">Departure Date</label>
-                    <input type="date" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                    <div class="date-wrapper w-full">
+                      <input type="date" id="myDateDeparture" class="datepicker appearance-none w-full border-b focus:outline-0 px-2">
+                      <span class="calendar-icon" onclick="document.getElementById('myDateDeparture').showPicker()"></span>
+                    </div>
                   </div>
-                  <div class="w-1/2 flex items-center gap-2">
-                    <label for="" class="w-full max-w-fit font-bold">Departure Date</label>
-                    <input type="date" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                  <div class="w-full lg:w-1/2 flex items-center gap-2">
+                    <label for="" class="w-full max-w-fit font-bold">Return Date</label>
+                    <div class="date-wrapper w-full">
+                      <input type="date" id="myDateReturn" class="datepicker appearance-none w-full border-b focus:outline-0 px-2">
+                      <span class="calendar-icon" onclick="document.getElementById('myDateReturn').showPicker()"></span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -125,15 +131,18 @@
                 <div class="w-[75%] px-4 py-2 space-y-6">
                   <div class="w-full flex items-center gap-2">
                     <label for="" class="w-full max-w-fit font-bold">Travelling Date :</label>
-                    <input type="date" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                    <div class="date-wrapper w-full">
+                      <input type="date" id="myDateTravelling" class="datepicker appearance-none w-full border-b focus:outline-0 px-2">
+                      <span class="calendar-icon" onclick="document.getElementById('myDateTravelling').showPicker()"></span>
+                    </div>
                   </div>
                   <div class="flex w-full items-center gap-6">
                     <div class="w-1/2 flex items-center gap-2">
-                      <label for="">From:</label>
+                      <label for="" class="w-full max-w-fit font-bold">From:</label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                     <div class="w-1/2 flex items-center gap-2">
-                      <label for="">From:</label>
+                      <label for="" class="w-full max-w-fit font-bold">To:</label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                   </div>
@@ -141,13 +150,13 @@
                     <label for="" class="w-full max-w-fit font-bold">Ticket cost :</label>
                     <input type="text" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                   </div>
-                  <div class="flex w-full items-center gap-6">
-                    <div class="w-1/2 flex items-center gap-2">
-                      <label for="" class="w-full max-w-fit">Amount in Local Currency :</label>
+                  <div class="flex flex-col md:flex-row w-full items-center gap-6">
+                    <div class="w-full md:w-1/2 flex items-center gap-2">
+                      <label for="" class="w-full max-w-fit font-bold">Amount in Local Currency :</label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
-                    <div class="w-1/2 flex items-center gap-2">
-                      <label for="" class="w-full max-w-fit">Amount In USD :</label>
+                    <div class="w-full md:w-1/2 flex items-center gap-2">
+                      <label for="" class="w-full max-w-fit font-bold">Amount In USD :</label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                   </div>
@@ -158,9 +167,9 @@
                     <a target="_blank" href="https:/www.oanda.com/currency-converter/en/" class="text-blue-600">https:/www.oanda.com/currency-converter/en/</a>
                   </div>
                   <div class="flex w-full justify-between">
-                    <p>Please mention the exchange rate: eg. 1USD= <span>94</span> BDT</p>
+                    <p class="font-bold">Please mention the exchange rate: eg. 1USD= <span>94</span> BDT</p>
                     <div class="flex items-center gap-2">
-                      <label for="" class="w-full max-w-fit">1 USD = </label>
+                      <label for="" class="w-full max-w-fit font-bold">1 USD = </label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                   </div>
@@ -172,13 +181,13 @@
                 </div>
                 <div class="w-[75%] px-4 py-2 space-y-6">
                   
-                  <div class="flex w-full items-center gap-6">
-                    <div class="w-1/2 flex items-center gap-2">
-                      <label for="">Number of Days claimed for:</label>
+                  <div class="flex flex-col md:flex-row w-full items-center gap-6">
+                    <div class="w-full md:w-1/2 flex items-center gap-2">
+                      <label for="" class="w-full max-w-fit font-bold">Number of Days claimed for:</label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
-                    <div class="w-1/2 flex items-center gap-2">
-                      <label for="">Total Calculation: </label>
+                    <div class="w-full md:w-1/2 flex items-center gap-2">
+                      <label for="" class="w-full max-w-fit font-bold">Total Calculation: </label>
                       <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                   </div>
@@ -216,9 +225,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full flex items-center gap-2">
+                  <div class="w-full flex items-center  justify-end gap-2">
                     <label for="" class="w-full max-w-fit font-bold">Total Amount USD:  </label>
-                    <input type="text" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                    <input type="text" class="w-full max-w-[200px] border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                   </div>
                 </div>
               </div>
@@ -226,13 +235,13 @@
                 <div class="w-1/4 border-r px-4 py-2">
                   <h5 class="font-bold">4. GRAND TOTAL </h5>
                 </div>
-                <div class="w-[75%] px-4 py-2 flex gap-2.5">
-                  <div class="w-1/2 flex items-center gap-2">
-                    <p>Ticket + Daily Allowance+ Other Expenses:  </p>
+                <div class="w-[75%] px-4 py-2 flex flex-col sm:flex-row gap-2.5">
+                  <div class="w-full sm:w-1/2 flex items-center gap-2">
+                    <p class="w-full max-w-fit font-bold">Ticket + Daily Allowance+ Other Expenses:  </p>
                   </div>
-                  <div class="w-1/2 flex items-center gap-2">
-                    <label for="" class="w-full max-w-fit font-bold">Departure Date</label>
-                    <input type="date" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                  <div class="w-full sm:w-1/2 flex items-center justify-end gap-2">
+                    <label for="" class="w-full max-w-fit font-bold">Total Amount USD:  </label>
+                    <input type="text" class="w-full max-w-[200px] border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                   </div>
                 </div>
               </div>
@@ -240,10 +249,8 @@
                 <div class="w-1/4 border-r px-4 py-2">
                   <h5 class="font-bold">5. FILE UPLOADE </h5>
                 </div>
-                <div class="w-[75%] px-4 py-2 flex gap-2.5">
-                  <div class="w-1/2 flex items-center gap-2">
-                  </div>
-                  <div class="w-1/2 flex items-center gap-2">
+                <div class="w-[75%] px-4 py-2 flex justify-end gap-2.5">
+                  <div class="w-full md:w-1/2 flex items-center gap-2">
                     <label for="" class="w-full max-w-fit font-bold">PDF/Image attachment:</label>
                     <input type="file" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                   </div>
@@ -260,7 +267,10 @@
           </div>
           <div class="flex items-center w-full">
             <label for="#">Date:</label>
-            <input type="date" class="w-full border-b focus:outline-0 px-2">
+            <div class="date-wrapper w-full">
+              <input type="date" id="myDateAll" class="datepicker appearance-none w-full border-b focus:outline-0 px-2">
+              <span class="calendar-icon" onclick="document.getElementById('myDateAll').showPicker()"></span>
+            </div>
           </div>
           <div class="flex items-center w-full">
             <label for="#">Signature:</label>
