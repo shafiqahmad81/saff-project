@@ -79,6 +79,13 @@ body{
   z-index: 999;
 }
 
+@media(max-width:768px){
+  .calendar-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 
 
 @utility container {
