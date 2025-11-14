@@ -170,7 +170,7 @@
                     <p class="font-bold">Please mention the exchange rate: eg. 1USD= <span>94</span> BDT</p>
                     <div class="flex items-center gap-2">
                       <label for="" class="w-full max-w-fit font-bold">1 USD = </label>
-                      <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                      <input id="TravellingUSD" type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                   </div>
                 </div>
@@ -181,14 +181,17 @@
                 </div>
                 <div class="w-2/3 sm:w-[75%] px-2 sm:px-4 py-2 space-y-6">
                   
-                  <div class="flex flex-col md:flex-row w-full items-center gap-6">
-                    <div class="w-full md:w-1/2 flex flex-col sm:flex-row sm:items-center gap-2">
+                  <div class="flex flex-col lg:flex-row w-full items-center gap-6">
+                    <div class="w-full lg:w-1/2 flex flex-col sm:flex-row sm:items-center gap-2">
                       <label for="" class="w-full max-w-fit font-bold">Number of Days claimed for:</label>
-                      <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                      <input id="DailyAllowance" type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
-                    <div class="w-full md:w-1/2 flex flex-col sm:flex-row sm:items-center gap-2">
-                      <label for="" class="w-full max-w-fit font-bold">Total Calculation: </label>
-                      <input type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                    <div class="w-full lg:w-1/2 flex flex-col sm:flex-row sm:items-center gap-2">
+                      <div class="flex flex-col w-full max-w-fit">
+                        <label for="" class=" font-bold">Total Calculation: </label>
+                        <span>(No. of days X USD)</span>
+                      </div>
+                      <input id="DailyCalculation" type="email" class="w-full border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                     </div>
                   </div>
                   <div class="w-full flex flex-col sm:flex-row sm:items-center gap-2">
@@ -225,8 +228,8 @@
                     </div>
                   </div>
                   <div class="w-full flex flex-col sm:flex-row items-end sm:items-center justify-end gap-2">
-                    <label for="" class="w-full max-w-fit font-bold">Total Amount USD:  </label>
-                    <input type="text" class="w-full max-w-[200px] border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                    <label for="" class="w-full max-w-fit font-bold">Total USD: </label>
+                    <input id="TotalUSD" type="text" class="w-full max-w-[200px] border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                   </div>
                 </div>
               </div>
@@ -240,7 +243,7 @@
                   </div>
                   <div class="w-full sm:w-1/2 flex flex-col sm:flex-row items-end sm:items-center justify-end gap-2">
                     <label for="" class="w-full max-w-fit font-bold">Total Amount USD:  </label>
-                    <input type="text" class="w-full max-w-[200px] border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
+                    <input id="TotalAmountUSD" type="text" class="w-full max-w-[200px] border border-[#8FAADC] px-2 py-1 bg-linear-to-bl from-[#90ABDC] via-white to-[#90ABDC] focus:outline-0">
                   </div>
                 </div>
               </div>
