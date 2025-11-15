@@ -6,6 +6,7 @@
 
     /* ========== fonts ========== */
     --font-titillium: "Titillium Web", sans-serif;
+    --font-dashicon: "dashicons", sans-serif;
 
       /* ============= brakpoint =============== */
     --breakpoint-1xl: 80rem;  /* 1280px */
@@ -13,6 +14,7 @@
     /* =============== color =============== */
     --color-body: #172144;
     --color-blue: #263772;
+    --color-blue-light: #364EA1;
 
     /* ============== shadow =============== */
 
@@ -20,6 +22,16 @@
 
 body{
     @apply text-base font-titillium text-body 
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; 
+}
+.dashicon::after{
+  content: '\f530';
+}
+.dashicon-hidden::after{
+  content: '\f177';
 }
 
 @layer base{
