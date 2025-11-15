@@ -10,7 +10,7 @@ export default defineConfig({
           input: {
             main: resolve(__dirname, 'index.html'),
             travel: resolve(__dirname, 'travel-claim.html'),
-            login: resolve(__dirname, 'loigin.html'),
+            login: resolve(__dirname, 'login.html'),
             portal: resolve(__dirname, 'portal.html'),
           },
         },
