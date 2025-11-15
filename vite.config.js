@@ -11,7 +11,7 @@ export default defineConfig({
             main: resolve(__dirname, 'index.html'),
             travel: resolve(__dirname, 'travel-claim.html'),
             login: resolve(__dirname, 'login.html'),
-            portal: resolve(__dirname, 'portal.html'),
+            portal: resolve(__dirname, 'protal.html'),
           },
         },
       },
