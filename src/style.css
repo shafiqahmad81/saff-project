@@ -33,6 +33,9 @@ body{
 .dashicon-hidden::after{
   content: '\f177';
 }
+td{
+  @apply text-sm sm:text-base md:text-lg
+}
 
 @layer base{
     h1, h2, h3, h4, h5, h6, button, span, input, select, a, label, textarea, tr, td{
@@ -46,7 +49,7 @@ body{
         @apply text-lg md:text-xl lg:text-2xl text-body
     }
     h5{
-        @apply text-base sm:text-lg
+        @apply text-sm sm:text-base md:text-lg
     }
     
 }
