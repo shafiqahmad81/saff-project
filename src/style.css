@@ -36,6 +36,10 @@ body{
 td{
   @apply text-sm sm:text-base md:text-lg
 }
+.password-input::-ms-reveal,
+.password-input::-ms-clear {
+    display: none;
+}
 
 @layer base{
     h1, h2, h3, h4, h5, h6, button, span, input, select, a, label, textarea, tr, td{
